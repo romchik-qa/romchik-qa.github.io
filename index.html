@@ -1,36 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Роман Кубов — QA Engineer</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Romchik | QA Engineer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="scene">
+  <canvas id="matrix"></canvas>
+
+  <div class="container">
     <div class="card">
-      <div class="card-front">
-        <h1>Роман Кубов</h1>
-        <p>QA Engineer</p>
-        <p>Jira, DevTools, Charles, Postman, Swagger, Kafka...</p>
-        <button onclick="flipCard()">Подробнее</button>
-        <a class="download-btn" href="assets/resume.pdf" download>📄 Скачать резюме</a>
-        <div class="icons">
-          <img src="assets/bug.svg" alt="Bug"/>
-          <img src="assets/magnifier.svg" alt="Search"/>
-          <img src="assets/gear.svg" alt="Gear"/>
-        </div>
+      <h1>Роман Кубов</h1>
+      <p>QA Engineer / Знаю: Jira, Postman, Charles, Swagger, Devtools и многое другое</p>
+      <div class="icons">
+        <img src="assets/bug.svg" class="icon" />
+        <img src="assets/magnifier.svg" class="icon" />
+        <img src="assets/gear.svg" class="icon" />
       </div>
-      <div class="card-back">
-        <h2>Контакты</h2>
-        <p>📧 romankubov@yandex.ru</p>
-        <p>💬 <a href="https://t.me/moneymagnat" target="_blank">t.me/moneymagnat</a></p>
-        <p>🌐 <a href="https://github.com/jblexperiments" target="_blank">GitHub: jblexperiments</a></p>
-        <button onclick="flipCard()">Назад</button>
+      <div class="contacts">
+        <p>Email: <a href="mailto:romankubov@yandex.ru">romankubov@yandex.ru</a></p>
+        <p>Telegram: <a href="https://t.me/moneymagnat">@moneymagnat</a></p>
       </div>
+      <button id="musicBtn">▶ Play Music</button>
     </div>
   </div>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/cyberpunk.mp3" type="audio/mpeg">
+  </audio>
+
   <script src="script.js"></script>
 </body>
 </html>
