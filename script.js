@@ -21,14 +21,14 @@ function drawMatrix() {
     let text = letters[Math.floor(Math.random() * letters.length)];
     ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
-    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+    if (drops[i] * fontSize > canvas.height && Math.random() > 0.99) {
       drops[i] = 0;
     }
-    drops[i]++;
+    drops[i] += 0.5;
   }
 }
 
-setInterval(drawMatrix, 33);
+setInterval(drawMatrix, 66);
 
 const musicBtn = document.getElementById("musicBtn");
 const music = document.getElementById("bgMusic");

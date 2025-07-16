@@ -35,6 +35,16 @@ canvas#matrix {
   box-shadow: 0 0 15px #0f0;
 }
 
+.name {
+  color: #dddddd;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #00ff00;
+}
+
 .icons .icon {
   width: 40px;
   margin: 10px;
@@ -45,6 +55,11 @@ canvas#matrix {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
+}
+
+.contact-link {
+  color: #e0e0e0;
+  text-decoration: none;
 }
 
 #musicBtn {
