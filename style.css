@@ -72,3 +72,19 @@ canvas#matrix {
   cursor: pointer;
   border-radius: 5px;
 }
+
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+/* картинка никогда не выйдет за рамки карточки */
+.profile-img {
+  max-width: 90%;   /* 90 % ширины карточки */
+  height: auto;     /* сохраняем пропорции */
+  border-radius: 12px;  /* мягкие углы; замени на 50% для круга */
+  object-fit: cover;    /* обрежет лишнее, если не квадрат */
+  box-shadow: 0 0 10px #0f0;
+}
+
