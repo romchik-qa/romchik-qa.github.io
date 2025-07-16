@@ -1,65 +1,36 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./normalize.css" rel="stylesheet" />
-    <link href="./ios.css" rel="stylesheet" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="header">
-      <img src="./avatar.png" alt="avatar" class="header__avatar" />
-      <div class="header__textContainer">
-        <h1 class="header__title">Роман Кубов</h1>
-        <h3 class="header__subtitle">Один из почти 8 миллиардов :)</h3>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Роман Кубов — QA Engineer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="scene">
+    <div class="card">
+      <div class="card-front">
+        <h1>Роман Кубов</h1>
+        <p>QA Engineer</p>
+        <p>Jira, DevTools, Charles, Postman, Swagger, Kafka...</p>
+        <button onclick="flipCard()">Подробнее</button>
+        <a class="download-btn" href="assets/resume.pdf" download>📄 Скачать резюме</a>
+        <div class="icons">
+          <img src="assets/bug.svg" alt="Bug"/>
+          <img src="assets/magnifier.svg" alt="Search"/>
+          <img src="assets/gear.svg" alt="Gear"/>
+        </div>
       </div>
-    </header>
-    <main>
-      <section class="links">
-        <h2 class="links__header">Связь со мной:</h2>
-        <ul class="links__container">
-          <li class="links__link">
-            <p class="links__title">Телеграм</p>
-            <a class="linsk__link" href="https://t.me/moneymagnat">@moneymagnat</a>
-          </li>
-          <li class="links__link">
-            <p class="links__title">Эл. почта</p>
-            <a class="linsk__link" href="mailto:romankubov@yandex.ru"
-              >romankubov@yandex.ru</a
-            >
-          </li>
-          <li class="links__link">
-            <p class="links__title">Фейсбук</p>
-            <a class="linsk__link" href="@roman_kubov"
-              >fb.com/roman.kubov</a
-            >
-          </li>
-         
-        </ul>
-      </section>
-      <section class="links">
-        <h2 class="links__header">В свободное время я:</h2>
-        <ul class="links__container">
-          <li class="links__link">
-            <p class="links__title">Учусь в</p>
-            <a class="linsk__link" href="https://qa.studio/">qa.studio</a>
-          </li>
-          <li class="links__link">
-            <p class="links__title">Пилю видосы</p>
-            <a class="linsk__link" href="https://www.youtube.com/channel/UCsJmYWP8OLK9Vq2ozLfmfqg">на ютубе</a>
-          </li>
-          <li class="links__link">
-            <p class="links__title">Админ</p>
-            <a class="linsk__link" href="https://t.me/fun_reklama">в тг канале</a>
-          </li>
-        </ul>
-      </section>
-    </main>
-   <footer>
-      <button type = "button" class="button-link" href="">Успех приходит к тем, кто движется вперед!</button>
-    </footer>
-    <script type="text/javascript" src="js.js"></script>
-  </body>
+      <div class="card-back">
+        <h2>Контакты</h2>
+        <p>📧 romankubov@yandex.ru</p>
+        <p>💬 <a href="https://t.me/moneymagnat" target="_blank">t.me/moneymagnat</a></p>
+        <p>🌐 <a href="https://github.com/jblexperiments" target="_blank">GitHub: jblexperiments</a></p>
+        <button onclick="flipCard()">Назад</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
